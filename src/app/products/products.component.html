@@ -1,0 +1,24 @@
+<body>
+  <div class="content">
+  <mat-card class="example-card">
+
+    <mat-card-header>
+      <mat-card-title>{{ products.title }}</mat-card-title>
+      <mat-card-subtitle>{{ products.category }}</mat-card-subtitle>
+    </mat-card-header>
+    <img
+      mat-card-img
+      height="50%"
+      width="100%"
+      src="{{ products.images[0] }}"
+    />
+    <mat-card-content>
+      <p>{{ products.description }}</p>
+    </mat-card-content>
+    <mat-divider inset></mat-divider>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  
+
